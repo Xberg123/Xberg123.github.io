@@ -1,0 +1,396 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.entry-form, .entries {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.entry-form h2, .entries h2 {
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: 2px solid #00cc66;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #00cc66;
+}
+
+#journal-form label, #journal-form textarea, #journal-form button {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#journal-form label {
+  font-weight: bold;
+  color: #00cc66;
+}
+
+#journal-form textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  padding: 8px;
+  border: 1px solid #00cc66;
+  border-radius: 4px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #444;
+  color: #fff;
+}
+
+#journal-form button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+#journal-form button:hover {
+  background-color: #00994d;
+}
+
+.entries-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entries-list li {
+  border-bottom: 1px solid #444;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entries-list h3 {
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #00cc66;
+}
+
+.entries-list p {
+  margin: 0;
+  color: #ccc;
+}
+
+.entries-list button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.2s;
+}
+
+.entries-list button:hover {
+  background-color: #c82333;
+}
+
+.entry-form .edit-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.entry-form .edit-buttons button {
+  margin-right: 5px;
+}
+
+.login-form, .signup-form {
+  background-color: #444;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2, .signup-form h2 {
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: 2px solid #00cc66;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #00cc66;
+}
+
+.login-form label, .signup-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #00cc66;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #00cc66;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #222;
+  color: #fff;
+}
+
+.login-form button, .signup-form button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.login-form button:hover, .signup-form button:hover {
+  background-color: #00994d;
+}
+
+.login-form p, .signup-form p {
+  margin-top: 10px;
+}
+
+#login-link, #signup-link {
+  background-color: transparent;
+  border: none;
+  color: #00cc66;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+#login-link:hover, #signup-link:hover {
+  color: #00994d;
+}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.entry-form, .entries {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.entry-form h2, .entries h2 {
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: 2px solid #00cc66;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #00cc66;
+}
+
+#journal-form label, #journal-form textarea, #journal-form button {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#journal-form label {
+  font-weight: bold;
+  color: #00cc66;
+}
+
+#journal-form textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  padding: 8px;
+  border: 1px solid #00cc66;
+  border-radius: 4px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #444;
+  color: #fff;
+}
+
+#journal-form button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+#journal-form button:hover {
+  background-color: #00994d;
+}
+
+.entries-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entries-list li {
+  border-bottom: 1px solid #444;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entries-list h3 {
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #00cc66;
+}
+
+.entries-list p {
+  margin: 0;
+  color: #ccc;
+}
+
+.entries-list button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.2s;
+}
+
+.entries-list button:hover {
+  background-color: #c82333;
+}
+
+.entry-form .edit-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.entry-form .edit-buttons button {
+  margin-right: 5px;
+}
+
+.login-form, .signup-form {
+  background-color: #444;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2, .signup-form h2 {
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: 2px solid #00cc66;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #00cc66;
+}
+
+.login-form label, .signup-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #00cc66;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #00cc66;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #222;
+  color: #fff;
+}
+
+.login-form button, .signup-form button {
+  background-color: #00cc66;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.login-form button:hover, .signup-form button:hover {
+  background-color: #00994d;
+}
+
+.login-form p, .signup-form p {
+  margin-top: 10px;
+}
+
+#login-link, #signup-link {
+  background-color: transparent;
+  border: none;
+  color: #00cc66;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+#login-link:hover, #signup-link:hover {
+  color: #00994d;
+}
