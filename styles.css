@@ -3,10 +3,6 @@
 
 /* Global Styles */
 
-h2{
-  text-align: center;
-}
-
 body {
   font-family: 'Roboto Mono', monospace;
   line-height: 1.6;
@@ -398,4 +394,9 @@ header {
 
 #login-link:hover, #signup-link:hover {
   color: #00994d;
+}
+
+
+h2{
+  text-align: center;
 }
