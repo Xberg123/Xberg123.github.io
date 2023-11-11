@@ -1,0 +1,118 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #0f0;
+  overflow: hidden; /* Hide overflow to enhance glitch effect */
+}
+
+header {
+  background-color: #000;
+  color: #0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.entry-form,
+.entries,
+.login-form,
+.signup-form,
+#auth-section {
+  background-color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: glitch 10s infinite; /* Glitch effect */
+}
+
+.entry-form h2,
+.entries h2,
+.login-form h2,
+.signup-form h2,
+#auth-section h2 {
+  font-family: 'Inconsolata', monospace;
+  border-bottom: 2px solid #00cc66;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #00cc66;
+}
+
+#journal-form label,
+#journal-form textarea,
+#journal-form button,
+.login-form label,
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button,
+.signup-form label,
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form button,
+#auth-section label,
+#auth-section input[type="text"],
+#auth-section input[type="password"],
+#auth-section button {
+  animation: fadeInUp 1s ease-in-out; /* Text animation */
+}
+
+/* ... (rest of the styles remain the same) */
+
+/* Text Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+/* Cursor Animation */
+@keyframes cursor {
+  0%, 100% {
+    border-right: 2px solid #00cc66;
+  }
+  50% {
+    border-right: 2px solid transparent;
+  }
+}
+
+/* Terminal Background Pattern */
+body::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(180deg, #000, #000 2px, #222 2px, #222 4px);
+  opacity: 0.3;
+  z-index: -1;
+}
