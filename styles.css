@@ -9,7 +9,7 @@ body {
   padding: 0;
   background-color: #000;
   color: #0f0;
-  overflow: hidden; /* Hide overflow to enhance glitch effect */
+  overflow: hidden;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: glitch 10s infinite; /* Glitch effect */
+  animation: glitch 10s infinite;
 }
 
 .entry-form h2,
@@ -65,54 +65,59 @@ header {
 #auth-section input[type="text"],
 #auth-section input[type="password"],
 #auth-section button {
-  animation: fadeInUp 1s ease-in-out; /* Text animation */
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .entry-form,
+  .entries,
+  .login-form,
+  .signup-form,
+  #auth-section {
+    padding: 10px;
+  }
 }
 
 /* ... (rest of the styles remain the same) */
 
-/* Text Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Glitch Effect */
 @keyframes glitch {
-  2%, 64% {
+
+  2%,
+  64% {
     transform: translate(2px, 0) skew(0deg);
   }
-  4%, 60% {
+
+  4%,
+  60% {
     transform: translate(-2px, 0) skew(0deg);
   }
+
   62% {
     transform: translate(0, 0) skew(5deg);
   }
-}
-
-/* Cursor Animation */
-@keyframes cursor {
-  0%, 100% {
-    border-right: 2px solid #00cc66;
-  }
-  50% {
-    border-right: 2px solid transparent;
-  }
-}
-
-/* Terminal Background Pattern */
-body::before {
-  content: '';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background: repeating-linear-gradient(180deg, #000, #000 2px, #222 2px, #222 4px);
-  opacity: 0.3;
-  z-index: -1;
 }
